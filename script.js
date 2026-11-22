@@ -124,28 +124,37 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. User Authentication State Check in Navbar
   const userData = sessionStorage.getItem('skillbridge_user');
   const navActions = document.querySelector('.nav-actions');
-  if (userData && navActions) {
+  const dashCta = document.getElementById('dashboard-cta');
+
+  if (userData) {
     try {
       const user = JSON.parse(userData);
       const displayName = user.name ? user.name.split(' ')[0] : (user.email ? user.email.split('@')[0] : 'Member');
       const roleCapitalized = user.role ? user.role.charAt(0).toUpperCase() + user.role.slice(1) : 'Learner';
       
-      navActions.innerHTML = `
-        <div style="display:flex; align-items:center; gap:0.75rem;">
-          <div style="display:flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.06); padding:0.4rem 0.9rem; border-radius:var(--radius-full); border:1px solid rgba(139,92,246,0.35); font-size:0.85rem; color:var(--text-primary); backdrop-filter:blur(8px);">
-            <span style="width:8px; height:8px; border-radius:50%; background:var(--accent-emerald); box-shadow:0 0 6px var(--accent-emerald);"></span>
-            <span>${displayName} <strong style="color:var(--accent-cyan-light)">(${roleCapitalized})</strong></span>
-          </div>
-          <button id="btn-logout" class="btn-ghost" style="padding:0.4rem 0.85rem; font-size:0.82rem; cursor:pointer; background:none; border:1px solid var(--border-color); border-radius:var(--radius-full);">Sign Out</button>
-        </div>
-      `;
+      if (dashCta && user.role === 'learner') {
+        dashCta.setAttribute('href', 'learner.html');
+      }
 
-      const logoutBtn = document.getElementById('btn-logout');
-      if (logoutBtn) {
-        logoutBtn.addEventListener('click', () => {
-          sessionStorage.removeItem('skillbridge_user');
-          window.location.reload();
-        });
+      if (navActions) {
+        navActions.innerHTML = `
+          <div style="display:flex; align-items:center; gap:0.65rem;">
+            <a href="learner.html" style="display:flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.06); padding:0.4rem 0.9rem; border-radius:var(--radius-full); border:1px solid rgba(139,92,246,0.35); font-size:0.85rem; color:var(--text-primary); text-decoration:none; backdrop-filter:blur(8px); transition:var(--transition-smooth);" onmouseover="this.style.borderColor='var(--accent-cyan)'" onmouseout="this.style.borderColor='rgba(139,92,246,0.35)'">
+              <span style="width:8px; height:8px; border-radius:50%; background:var(--accent-emerald); box-shadow:0 0 6px var(--accent-emerald);"></span>
+              <span>${displayName} <strong style="color:var(--accent-cyan-light)">(${roleCapitalized})</strong></span>
+              <span style="font-size:0.75rem; color:var(--text-muted);">Panel →</span>
+            </a>
+            <button id="btn-logout" class="btn-ghost" style="padding:0.4rem 0.85rem; font-size:0.82rem; cursor:pointer; background:none; border:1px solid var(--border-color); border-radius:var(--radius-full);">Sign Out</button>
+          </div>
+        `;
+
+        const logoutBtn = document.getElementById('btn-logout');
+        if (logoutBtn) {
+          logoutBtn.addEventListener('click', () => {
+            sessionStorage.removeItem('skillbridge_user');
+            window.location.reload();
+          });
+        }
       }
     } catch (e) {
       console.error('Error parsing session user', e);

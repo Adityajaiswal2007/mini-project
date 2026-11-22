@@ -242,7 +242,11 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast(`Signed in successfully as ${role}!`, 'success');
 
         setTimeout(() => {
-          window.location.href = 'index.html';
+          if (role === 'learner') {
+            window.location.href = 'learner.html';
+          } else {
+            window.location.href = 'index.html';
+          }
         }, 1200);
       }, 1100);
     });
@@ -317,7 +321,11 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast(`Account created successfully! Welcome, ${name}.`, 'success');
 
         setTimeout(() => {
-          window.location.href = 'index.html';
+          if (role === 'learner') {
+            window.location.href = 'learner.html';
+          } else {
+            window.location.href = 'index.html';
+          }
         }, 1400);
       }, 1200);
     });
