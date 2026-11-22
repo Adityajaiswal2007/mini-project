@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge — Competency-Based Learning and Skill Gap Analysis</title>
+  <meta name="description" content="SkillBridge is a modern platform for skill gap analysis, competency mapping, and personalized learning recommendations. Bridge the gap between where you are and where you want to be." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" fill="none" stroke="url(#lg1)" stroke-width="2"/><circle cx="14" cy="14" r="3" fill="url(#lg1)"/><defs><linearGradient id="lg1" x1="0" y1="0" x2="28" y2="28"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs></svg>
+        </div>
+        <span>Skill<span class="logo-accent">Bridge</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#roles" class="nav-link">For Who</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost" id="nav-login">Log In</a>
+        <a href="#" class="btn-primary" id="nav-cta">Get Started Free</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge"><span class="badge-dot"></span><span>Trusted by 50,000+ Learners Worldwide</span></div>
+      <h1 class="hero-title" id="hero-title">Bridge Your <span class="gradient-text">Skill Gap.</span><br/>Accelerate Your <span class="gradient-text">Growth.</span></h1>
+      <p class="hero-subtitle" id="hero-subtitle">SkillBridge combines intelligent competency mapping, real-time skill gap analysis, and personalized learning paths — so you always know exactly what to learn next.</p>
+      <div class="hero-cta-group" id="hero-cta">
+        <a href="#" class="btn-hero-primary" id="hero-btn-primary"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Start for Free</a>
+        <a href="#how-it-works" class="btn-hero-ghost" id="hero-btn-ghost"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16"/></svg>See How It Works</a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item"><span class="stat-num" data-target="50000">0</span><span class="stat-suffix">+</span><span class="stat-label">Active Learners</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num" data-target="2400">0</span><span class="stat-suffix">+</span><span class="stat-label">Courses Available</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num" data-target="94">0</span><span class="stat-suffix">%</span><span class="stat-label">Skill Improvement Rate</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-num" data-target="320">0</span><span class="stat-suffix">+</span><span class="stat-label">Enterprise Partners</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator"><span>Scroll to explore</span><div class="scroll-arrow"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div></div>
+  </section>
+
+  <section class="logo-strip">
+    <div class="container">
+      <p class="logo-strip-label">Trusted by teams at</p>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <span class="company-logo">Microsoft</span><span class="company-logo">Google</span><span class="company-logo">Infosys</span><span class="company-logo">Wipro</span><span class="company-logo">Accenture</span><span class="company-logo">IBM</span><span class="company-logo">Deloitte</span><span class="company-logo">TCS</span><span class="company-logo">Microsoft</span><span class="company-logo">Google</span><span class="company-logo">Infosys</span><span class="company-logo">Wipro</span><span class="company-logo">Accenture</span><span class="company-logo">IBM</span><span class="company-logo">Deloitte</span><span class="company-logo">TCS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Features</div>
+        <h2 class="section-title">Everything you need to <span class="gradient-text">master your skills</span></h2>
+        <p class="section-subtitle">A complete ecosystem for learners, trainers, and administrators to collaborate and grow.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--large" data-delay="0">
+          <div class="feature-icon-wrap" style="--icon-color:#7c3aed"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/><polygon points="12,6 18,9.5 18,14.5 12,18 6,14.5 6,9.5"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Competency Mapping</h3>
+          <p>Visually map your skills across domains. See your strengths and blind spots in an intuitive radar chart powered by your assessment results.</p>
+          <div class="feature-visual">
+            <div class="radar-mini"><svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"><polygon points="60,10 110,35 110,85 60,110 10,85 10,35" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1"/><polygon points="60,25 95,42.5 95,77.5 60,95 25,77.5 25,42.5" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1"/><polygon points="60,40 80,50 80,70 60,80 40,70 40,50" fill="none" stroke="rgba(124,58,237,0.2)" stroke-width="1"/><polygon points="60,15 105,38 100,80 60,105 20,80 15,38" fill="rgba(124,58,237,0.15)" stroke="#7c3aed" stroke-width="2" class="radar-shape"/><circle cx="60" cy="15" r="3" fill="#06b6d4"/><circle cx="105" cy="38" r="3" fill="#06b6d4"/><circle cx="100" cy="80" r="3" fill="#06b6d4"/><circle cx="60" cy="105" r="3" fill="#7c3aed"/><circle cx="20" cy="80" r="3" fill="#7c3aed"/><circle cx="15" cy="38" r="3" fill="#7c3aed"/></svg></div>
+          </div>
+        </div>
+        <div class="feature-card" data-delay="100">
+          <div class="feature-icon-wrap" style="--icon-color:#06b6d4"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+          <h3>Skill Gap Analysis</h3>
+          <p>AI-powered analysis identifies the exact gap between your current skills and your target role or career path.</p>
+          <div class="gap-bars">
+            <div class="gap-bar-row"><span>Python</span><div class="gap-bar-track"><div class="gap-bar-fill" style="width:78%;--c:#7c3aed"></div></div><span class="gap-pct">78%</span></div>
+            <div class="gap-bar-row"><span>Data Analysis</span><div class="gap-bar-track"><div class="gap-bar-fill" style="width:52%;--c:#06b6d4"></div></div><span class="gap-pct">52%</span></div>
+            <div class="gap-bar-row"><span>ML Basics</span><div class="gap-bar-track"><div class="gap-bar-fill" style="width:35%;--c:#f59e0b"></div></div><span class="gap-pct">35%</span></div>
+          </div>
+        </div>
+        <div class="feature-card" data-delay="200">
+          <div class="feature-icon-wrap" style="--icon-color:#10b981"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <h3>Personalized Learning Paths</h3>
+          <p>Get curated course recommendations tailored to your goals, existing knowledge, and learning pace.</p>
+        </div>
+        <div class="feature-card" data-delay="300">
+          <div class="feature-icon-wrap" style="--icon-color:#f59e0b"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg></div>
+          <h3>Smart Assessments</h3>
+          <p>Adaptive quizzes and practical assignments that adjust difficulty in real-time based on your performance.</p>
+        </div>
+        <div class="feature-card" data-delay="400">
+          <div class="feature-icon-wrap" style="--icon-color:#ec4899"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3>Trainer and Admin Dashboard</h3>
+          <p>Trainers manage courses, monitor learner progress, and identify cohort-level skill trends at a glance.</p>
+        </div>
+        <div class="feature-card feature-card--large" data-delay="500">
+          <div class="feature-icon-wrap" style="--icon-color:#6366f1"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Real-Time Progress Tracking</h3>
+          <p>Live dashboards show your completed milestones, earned badges, and projected skill mastery dates. Stay motivated with streak tracking and weekly goals.</p>
+          <div class="progress-preview">
+            <div class="prog-row"><div class="prog-icon">🎯</div><div class="prog-info"><span class="prog-name">Weekly Goal</span><div class="prog-bar-track"><div class="prog-bar" style="width:65%"></div></div></div><span class="prog-val">65%</span></div>
+            <div class="prog-row"><div class="prog-icon">🔥</div><div class="prog-info"><span class="prog-name">14-Day Streak</span><div class="prog-bar-track"><div class="prog-bar" style="width:85%;--pb:#f59e0b"></div></div></div><span class="prog-val">14</span></div>
+            <div class="prog-row"><div class="prog-icon">🏆</div><div class="prog-info"><span class="prog-name">Badges Earned</span><div class="prog-bar-track"><div class="prog-bar" style="width:40%;--pb:#10b981"></div></div></div><span class="prog-val">8/20</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-section section">
+    <div class="container">
+      <div class="dashboard-wrapper">
+        <div class="dashboard-text">
+          <div class="section-tag">Platform Preview</div>
+          <h2 class="section-title">A dashboard built for <span class="gradient-text">clarity</span></h2>
+          <p class="section-subtitle" style="text-align:left;max-width:100%">Every metric that matters — skill radar, training progress, proficiency trends, and badges — all unified in one beautiful interface.</p>
+          <ul class="dashboard-bullets">
+            <li><div class="bullet-icon">✦</div><span>Competency radar chart with 6 skill domains</span></li>
+            <li><div class="bullet-icon">✦</div><span>Real-time training progress per course</span></li>
+            <li><div class="bullet-icon">✦</div><span>Earned badges and achievement milestones</span></li>
+            <li><div class="bullet-icon">✦</div><span>Proficiency trend graphs over time</span></li>
+          </ul>
+          <a href="#" class="btn-primary" id="dashboard-cta">Explore the Dashboard →</a>
+        </div>
+        <div class="dashboard-image-wrap">
+          <div class="dashboard-glow"></div>
+          <img src="dashboard_mockup.jpg" alt="SkillBridge Dashboard" class="dashboard-img" id="dashboard-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">The Process</div>
+        <h2 class="section-title">From <span class="gradient-text">assessment</span> to achievement</h2>
+        <p class="section-subtitle">A structured four-step journey designed to maximize your learning outcomes.</p>
+      </div>
+      <div class="steps-timeline">
+        <div class="steps-line"></div>
+        <div class="step-item" data-step="1"><div class="step-number">01</div><div class="step-card"><div class="step-icon"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div><h3>Create Your Profile</h3><p>Sign up and tell us your current role, target role, and skill domains you want to develop.</p></div></div>
+        <div class="step-item" data-step="2"><div class="step-number">02</div><div class="step-card"><div class="step-icon"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><line x1="12" y1="12" x2="12" y2="18"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div><h3>Take Skill Assessment</h3><p>Complete adaptive assessments across your chosen skill domains to establish a baseline competency score.</p></div></div>
+        <div class="step-item" data-step="3"><div class="step-number">03</div><div class="step-card"><div class="step-icon"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h3>Get Your Gap Report</h3><p>Receive a detailed skill gap report showing exactly where you stand and what skills need the most attention.</p></div></div>
+        <div class="step-item" data-step="4"><div class="step-number">04</div><div class="step-card"><div class="step-icon"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><h3>Learn and Track Progress</h3><p>Follow your personalized learning path, complete courses, earn badges, and watch your competency grow.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roles-section section" id="roles">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Designed For Everyone</div>
+        <h2 class="section-title">Built for <span class="gradient-text">every role</span> in learning</h2>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card" id="role-learner"><div class="role-icon-wrap" style="--rc:#7c3aed"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 2a5 5 0 110 10A5 5 0 0112 2z"/><path d="M4 20a8 8 0 0116 0"/></svg></div><div class="role-badge" style="--rb:#7c3aed">Learner</div><h3>For Learners</h3><ul class="role-list"><li>Identify personal skill gaps</li><li>Get AI-curated learning paths</li><li>Track progress with live dashboards</li><li>Earn shareable badges and certificates</li><li>Set weekly goals and streaks</li></ul><a href="#" class="role-cta">Start Learning →</a></div>
+        <div class="role-card role-card--featured" id="role-trainer"><div class="role-icon-wrap" style="--rc:#06b6d4"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><div class="role-badge" style="--rb:#06b6d4">Trainer</div><h3>For Trainers</h3><ul class="role-list"><li>Create and manage courses easily</li><li>Design smart assessments</li><li>Monitor learner performance</li><li>View cohort skill trend reports</li><li>Provide targeted feedback</li></ul><a href="#" class="role-cta">Become a Trainer →</a></div>
+        <div class="role-card" id="role-admin"><div class="role-icon-wrap" style="--rc:#10b981"><svg width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg></div><div class="role-badge" style="--rb:#10b981">Admin</div><h3>For Administrators</h3><ul class="role-list"><li>Manage all users and roles</li><li>Oversee org-wide training</li><li>Generate compliance reports</li><li>Configure skill frameworks</li><li>Set org-wide learning goals</li></ul><a href="#" class="role-cta">Admin Access →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What People Say</div>
+        <h2 class="section-title">Loved by <span class="gradient-text">thousands</span> of learners</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-delay="0"><div class="t-stars">★★★★★</div><p class="t-text">"SkillBridge completely changed how I approach my career development. The skill gap report was eye-opening — I finally know exactly what to focus on."</p><div class="t-author"><div class="t-avatar" style="background:linear-gradient(135deg,#7c3aed,#06b6d4)">AR</div><div><strong>Aanya Reddy</strong><span>Data Analyst, Infosys</span></div></div></div>
+        <div class="testimonial-card" data-delay="150"><div class="t-stars">★★★★★</div><p class="t-text">"As a trainer, the dashboard gives me incredible visibility into each learner's progress. I can identify who needs help before they fall behind."</p><div class="t-author"><div class="t-avatar" style="background:linear-gradient(135deg,#06b6d4,#10b981)">MK</div><div><strong>Mohit Kapur</strong><span>Senior Trainer, TCS</span></div></div></div>
+        <div class="testimonial-card" data-delay="300"><div class="t-stars">★★★★★</div><p class="t-text">"The personalized learning path saved me months of guessing. I went from junior dev to getting my ML role in just 4 months with SkillBridge."</p><div class="t-author"><div class="t-avatar" style="background:linear-gradient(135deg,#f59e0b,#ec4899)">PS</div><div><strong>Priya Sharma</strong><span>ML Engineer, Google</span></div></div></div>
+        <div class="testimonial-card" data-delay="450"><div class="t-stars">★★★★★</div><p class="t-text">"We rolled out SkillBridge for 800 employees. The org-wide competency reports transformed how we plan L&D budgets and priorities."</p><div class="t-author"><div class="t-avatar" style="background:linear-gradient(135deg,#10b981,#6366f1)">RV</div><div><strong>Rahul Verma</strong><span>L&D Director, Wipro</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Pricing Plans</div>
+        <h2 class="section-title">Simple, <span class="gradient-text">transparent</span> pricing</h2>
+        <p class="section-subtitle">No hidden fees. Start free, upgrade when you are ready.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card" id="price-free"><div class="price-header"><h3>Starter</h3><div class="price-amount"><span class="price-currency">₹</span>0<span class="price-period">/mo</span></div><p>Perfect for individual learners getting started.</p></div><ul class="price-features"><li><span class="check">✓</span> 5 courses access</li><li><span class="check">✓</span> Basic skill assessment</li><li><span class="check">✓</span> Personal competency map</li><li><span class="check">✓</span> Progress tracking</li><li class="disabled"><span>✗</span> AI learning path</li><li class="disabled"><span>✗</span> Certificates</li></ul><a href="#" class="price-btn price-btn--ghost">Get Started Free</a></div>
+        <div class="price-card price-card--featured" id="price-pro"><div class="price-popular-badge">Most Popular</div><div class="price-header"><h3>Pro</h3><div class="price-amount"><span class="price-currency">₹</span>499<span class="price-period">/mo</span></div><p>For serious learners ready to accelerate growth.</p></div><ul class="price-features"><li><span class="check">✓</span> Unlimited courses</li><li><span class="check">✓</span> Advanced assessments</li><li><span class="check">✓</span> Full competency mapping</li><li><span class="check">✓</span> AI-personalized learning path</li><li><span class="check">✓</span> Certificates and badges</li><li><span class="check">✓</span> Priority support</li></ul><a href="#" class="price-btn price-btn--primary">Start Pro →</a></div>
+        <div class="price-card" id="price-enterprise"><div class="price-header"><h3>Enterprise</h3><div class="price-amount" style="font-size:2rem">Custom</div><p>For organizations scaling skills at team level.</p></div><ul class="price-features"><li><span class="check">✓</span> Everything in Pro</li><li><span class="check">✓</span> Org-wide dashboards</li><li><span class="check">✓</span> Trainer management</li><li><span class="check">✓</span> Compliance reporting</li><li><span class="check">✓</span> SSO and API access</li><li><span class="check">✓</span> Dedicated account manager</li></ul><a href="#" class="price-btn price-btn--ghost">Contact Sales →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner section">
+    <div class="container">
+      <div class="cta-card" id="cta-card">
+        <div class="cta-orb cta-orb-1"></div>
+        <div class="cta-orb cta-orb-2"></div>
+        <div class="section-tag" style="margin-bottom:1.5rem">Ready to Start?</div>
+        <h2>Start bridging your skill gap <span class="gradient-text">today.</span></h2>
+        <p>Join 50,000+ learners who are accelerating their careers with SkillBridge. No credit card required.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-hero-primary" id="cta-final-btn">Create Free Account</a>
+          <a href="#" class="btn-hero-ghost" id="cta-demo-btn">Schedule a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo"><div class="logo-icon"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><polygon points="14,2 26,8 26,20 14,26 2,20 2,8" fill="none" stroke="url(#flg)" stroke-width="2"/><circle cx="14" cy="14" r="3" fill="url(#flg)"/><defs><linearGradient id="flg" x1="0" y1="0" x2="28" y2="28"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs></svg></div><span>Skill<span class="logo-accent">Bridge</span></span></a>
+          <p class="footer-tagline">Empowering learners to identify, bridge, and overcome skill gaps through intelligent, personalized learning.</p>
+          <div class="social-links"><a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">Git</a><a href="#" class="social-btn">▶</a></div>
+        </div>
+        <div class="footer-links-group"><h4>Platform</h4><ul><li><a href="#">Features</a></li><li><a href="#">Skill Assessments</a></li><li><a href="#">Learning Paths</a></li><li><a href="#">Certifications</a></li><li><a href="#">Enterprise</a></li></ul></div>
+        <div class="footer-links-group"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Press Kit</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div class="footer-links-group"><h4>Support</h4><ul><li><a href="#">Help Center</a></li><li><a href="#">Documentation</a></li><li><a href="#">API Reference</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkillBridge. All rights reserved. Built with love for lifelong learners.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
